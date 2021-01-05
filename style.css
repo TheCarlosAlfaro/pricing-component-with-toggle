@@ -1,7 +1,7 @@
 body {
 	background-color: #f7f7ff;
 	background-image: url("./images/bg-top.svg"), url("./images/bg-bottom.svg");
-	background-position: top right, bottom left;
+	background-position: 8.5rem -3.1rem, bottom left;
 	background-repeat: no-repeat;
 	height: 100vh;
 	font-family: "Montserrat", sans-serif;
@@ -12,9 +12,9 @@ body {
 }
 
 .our-pricing h1 {
-	color: #515265;
-	margin-top: 2.5rem;
-	margin-bottom: 2.5rem;
+	color: #717291;
+	margin-top: 3rem;
+	margin-bottom: 3rem;
 }
 .toggle-plan {
 	color: #b0b0bd;
@@ -22,6 +22,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin-bottom: 3rem;
 }
 .switch {
 	position: relative;
@@ -70,12 +71,71 @@ input:checked + .slider:before {
 	-ms-transform: translateX(26px);
 	transform: translateX(26px);
 }
-
-/* Rounded sliders */
 .slider.round {
 	border-radius: 34px;
 }
 
 .slider.round:before {
 	border-radius: 50%;
+}
+
+.price-columns__container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.price-card {
+	background-color: #ffffff;
+	width: 270px;
+	padding: 10px;
+	margin-bottom: 20px;
+	border-radius: 10px;
+}
+
+.price-columns__container .plan-type {
+	margin-top: 25px;
+	color: #66677c;
+}
+.price-columns__container .plan-price {
+	font-size: 3.5rem;
+	color: #4a4d60;
+	margin: 25px 0;
+}
+.price-columns__container .plan-price span {
+	display: inline-block;
+	font-size: 2rem;
+	vertical-align: middle;
+	margin-bottom: 5px;
+}
+.plan-details__container .plan-detail__row {
+	color: #7c7c89;
+	font-size: 0.8rem;
+}
+.price-card .divider {
+	width: 230px;
+	border: none;
+	border-top: 2px solid #f7f7f7;
+}
+
+.price-card .learn-more__button {
+	display: inline-block;
+	text-transform: uppercase;
+	padding: 10px 0;
+	width: 230px;
+	max-width: 230px;
+	margin: 20px 0px;
+	border-radius: 6px;
+	text-decoration: none;
+	font-size: 0.8rem;
+	color: #e8eeff;
+	background: linear-gradient(45deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+}
+
+/* MEDIA QUERIES */
+/* When the browser is at least 600px and above */
+@media screen and (min-width: 600px) {
+	body {
+		background-position: top right, bottom left;
+	}
 }
