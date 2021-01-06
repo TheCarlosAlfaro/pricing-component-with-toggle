@@ -1,9 +1,9 @@
 body {
 	background-color: #f7f7ff;
 	background-image: url("./images/bg-top.svg"), url("./images/bg-bottom.svg");
-	background-position: 8.5rem -3.1rem, bottom left;
+	/* background-position: 8.5rem -3.1rem, bottom left; */
+	background-position: top -40px right -200px, bottom left;
 	background-repeat: no-repeat;
-	height: 100vh;
 	font-family: "Montserrat", sans-serif;
 	font-weight: 700;
 }
@@ -132,9 +132,16 @@ input:checked + .slider:before {
 	background: linear-gradient(45deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
 }
 
+.attribution {
+	position: sticky;
+	width: 318px;
+	/* bottom: 0; */
+	left: calc(50% - (318px / 2));
+	padding: 10px 0;
+	margin-top: -10px;
+}
 /* MEDIA QUERIES */
-/* When the browser is at least 600px and above */
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1024px) {
 	body {
 		background-position: top right, bottom left;
 	}
