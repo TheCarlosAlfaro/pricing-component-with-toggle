@@ -134,8 +134,8 @@ input:checked + .slider:before {
 div.price-card.featured {
 	background: linear-gradient(45deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
 }
-div.price-card.featured p,
-span {
+div.price-card.featured p span,
+div.price-card.featured p {
 	color: #f7f7ff;
 }
 .price-card .learn-more__button.featured {
