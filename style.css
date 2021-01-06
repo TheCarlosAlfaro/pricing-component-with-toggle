@@ -1,8 +1,7 @@
 body {
 	background-color: #f7f7ff;
 	background-image: url("./images/bg-top.svg"), url("./images/bg-bottom.svg");
-	/* background-position: 8.5rem -3.1rem, bottom left; */
-	background-position: top -40px right -200px, bottom left;
+	background-position: top -40px right -200px, bottom left -200px;
 	background-repeat: no-repeat;
 	font-family: "Montserrat", sans-serif;
 	font-weight: 700;
@@ -132,12 +131,27 @@ input:checked + .slider:before {
 	background: linear-gradient(45deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
 }
 
+div.price-card.featured {
+	background: linear-gradient(45deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+}
+div.price-card.featured p,
+span {
+	color: #f7f7ff;
+}
+.price-card .learn-more__button.featured {
+	background: #f7f7ff;
+	color: #6260b8;
+}
+div.price-card.featured hr {
+	border-top: 2px solid #9ea2f7;
+}
+
 .attribution {
 	position: sticky;
 	width: 318px;
 	/* bottom: 0; */
 	left: calc(50% - (318px / 2));
-	padding: 10px 0;
+	padding: 30px 0;
 	margin-top: -10px;
 }
 /* MEDIA QUERIES */
