@@ -85,7 +85,7 @@ input:checked + .slider:before {
 }
 
 .price-card {
-	background-color: #ffffff;
+	background-color: #fff;
 	width: 270px;
 	padding: 10px;
 	margin-bottom: 20px;
