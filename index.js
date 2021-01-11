@@ -13,7 +13,7 @@ const prices = {
 	},
 	monthly: {
 		basic: `19.99`,
-		professional: `24.99`,
+		professional: `24.999`,
 		master: `39.99`,
 	},
 };
